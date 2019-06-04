@@ -1,0 +1,9 @@
+resilience4j.ratelimiter:
+  limiters:
+    limit1:
+      limitForPeriod: 10
+      limitRefreshPeriodInMillis: 1000
+      timeoutInMillis: 0
+      subscribeForEvents: true
+      registerHealthIndicator: true
+      eventConsumerBufferSize: 100
