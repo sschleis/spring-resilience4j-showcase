@@ -1,6 +1,5 @@
 package de.sschleis.showcase.springresilience4jshowcase.rate
 
-import org.junit.Assert.*
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.springframework.beans.factory.annotation.Autowired
@@ -12,14 +11,14 @@ import org.springframework.test.context.junit4.SpringRunner
 class LimitedTest{
 
     @Autowired
-    lateinit var limited: Limited
+    lateinit var limited: RatelimiterShowcase
 
     @Test
     fun callLimited(){
         for(i in 1..20) {
             println("Call $i")
             limited.limitedMethod()
-            Thread.sleep(90L)
+            Thread.sleep(10L)
         }
     }
 }
