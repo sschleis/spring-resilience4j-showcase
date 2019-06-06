@@ -28,6 +28,7 @@ class Dummy{
         return "Done"
     }
 
+    @Suppress("unused")
     fun fallback(e: Exception): String? {
         return e.message
     }

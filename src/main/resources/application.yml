@@ -24,3 +24,19 @@ resilience4j.retry:
         - java.io.IOException
       ##ignoreExceptions:
       ##  - io.github.resilience4j.circuitbreaker.IgnoredException
+
+resilience4j.circuitbreaker:
+  backends:
+    cb1:
+      ringBufferSizeInClosedState: 5
+      ringBufferSizeInHalfOpenState: 3
+      waitInterval: 5000
+      failureRateThreshold: 50
+      eventConsumerBufferSize: 10
+      registerHealthIndicator: true
+      ##recordFailurePredicate: com.foo.FooRecordFailurePredicate
+      recordExceptions:
+        - org.springframework.web.client.HttpServerErrorException
+        - java.io.IOException
+      ignoreExceptions:
+        - org.springframework.web.client.HttpClientErrorException

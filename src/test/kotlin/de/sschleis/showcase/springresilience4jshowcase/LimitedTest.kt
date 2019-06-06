@@ -1,4 +1,4 @@
-package de.sschleis.showcase.springresilience4jshowcase.rate
+package de.sschleis.showcase.springresilience4jshowcase
 
 import de.sschleis.showcase.springresilience4jshowcase.RatelimiterShowcase
 import org.junit.Test
