@@ -1,4 +1,4 @@
-package de.sschleis.showcase.springresilience4jshowcase.rate
+package de.sschleis.showcase.springresilience4jshowcase
 
 import io.github.resilience4j.ratelimiter.annotation.RateLimiter
 import org.springframework.stereotype.Component

@@ -7,3 +7,20 @@ resilience4j.ratelimiter:
       subscribeForEvents: true
       registerHealthIndicator: true
       eventConsumerBufferSize: 100
+
+resilience4j.retry:
+  retryAspectOrder: 399
+  backends:
+    retry1:
+      maxRetryAttempts: 3
+      waitDuration: 600
+      eventConsumerBufferSize: 100
+      enableExponentialBackoff: false
+      exponentialBackoffMultiplier: 2
+      enableRandomizedWait: false
+      randomizedWaitFactor: 2
+      ##retryExceptionPredicate: io.github.resilience4j.circuitbreaker.RecordFailurePredicate
+      retryExceptions:
+        - java.io.IOException
+      ##ignoreExceptions:
+      ##  - io.github.resilience4j.circuitbreaker.IgnoredException
