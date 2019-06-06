@@ -25,5 +25,16 @@ class CBTest{
         println(cbShowcase.cbMethod())
         println(cbShowcase.cbMethod())
         println(cbShowcase.cbMethod())
+        println(cbShowcase.cbMethod())
+        println(cbShowcase.cbMethod())
+        println(cbShowcase.cbMethod())
+        println(cbShowcase.cbMethod())
+        println(cbShowcase.cbMethod())
+        println(cbShowcase.cbMethod())
+        println(cbShowcase.cbMethod())
+        println(cbShowcase.cbMethod())
+        println(cbShowcase.cbMethod())
+        println(cbShowcase.cbMethod())
+        println(cbShowcase.cbMethod())
     }
 }

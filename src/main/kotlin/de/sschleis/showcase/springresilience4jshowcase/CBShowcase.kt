@@ -14,13 +14,13 @@ class CBShowcase {
     fun cbMethod(): String {
         counter++
         println("cbMethod call $counter")
-        //if (counter < 3)
+        if (counter % 2 == 0)
             throw IOException("Exception")
         return "Done"
     }
 
     fun fallback(e: Exception): String? {
-        return "Fallback"
+        return "Fallback ${e.message}"
     }
 
 }
