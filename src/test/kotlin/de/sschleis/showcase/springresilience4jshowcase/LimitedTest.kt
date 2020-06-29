@@ -1,6 +1,5 @@
 package de.sschleis.showcase.springresilience4jshowcase
 
-import de.sschleis.showcase.springresilience4jshowcase.RatelimiterShowcase
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.springframework.beans.factory.annotation.Autowired
@@ -9,7 +8,7 @@ import org.springframework.test.context.junit4.SpringRunner
 
 @SpringBootTest
 @RunWith(SpringRunner::class)
-class LimitedTest{
+class ØLimitedTest{
 
     @Autowired
     lateinit var limited: RatelimiterShowcase

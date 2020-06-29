@@ -19,6 +19,7 @@ class CBShowcase {
         return "Done"
     }
 
+    @Suppress("unused")
     fun fallback(e: Exception): String? {
         return "Fallback ${e.message}"
     }
